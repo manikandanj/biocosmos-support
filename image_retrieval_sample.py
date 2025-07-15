@@ -24,6 +24,10 @@ with h5py.File('C:/Mani/learn/Courses/BioCosmos/Butterfly_Project/Artifacts/2025
     db_image_paths = [p.decode('utf-8') for p in hf['metadata']['url'][:]]  
     db_mask_names = [m.decode('utf-8') for m in hf['metadata']['mask_name'][:]] 
 
+print(f"Database embeddings shape: {db_embeddings.shape}")
+print(f"Embedding dimension: {db_embeddings.shape[1]}")
+print(f"Number of images in database: {db_embeddings.shape[0]}")
+
 
 # --- 3. Perform a search for a new query image ---
 def find_similar_images(query_image_path, top_k=10):

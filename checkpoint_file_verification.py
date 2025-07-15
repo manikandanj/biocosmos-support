@@ -1,7 +1,7 @@
 import torch
 
 # --- Use the path to the file O provided ---
-checkpoint_path = "C:/Mani/learn/Courses/BioCosmos/Butterfly_Project/Artifacts/best_img2img_20250707.pt"
+checkpoint_path = "C:/Mani/learn/Courses/BioCosmos/Butterfly_Project/Artifacts/best_img2img__v1_20250707.pt"
 
 print(f"--- Inspecting Checkpoint File: {checkpoint_path} ---\n")
 
